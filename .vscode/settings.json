@@ -1,0 +1,11 @@
+{
+    "editor.codeActionsOnSave": {
+        "source.fixAll.ts": "always",
+        "source.organizeImports": "always",
+        "source.addMissingImports.ts": "always",
+        "source.fixAll.eslint": "always"
+    },
+    "editor.formatOnSave": true,
+    "files.autoSave": "onFocusChange",
+    "editor.codeActions.triggerOnFocusChange": true
+}
