@@ -21,12 +21,10 @@ import { PromptEntity } from './entities/prompt.entity';
         synchronize: configService.get<boolean>('DB_SYNC', false),
         migrationsRun: configService.get<boolean>('DB_MIGRATIONS_RUN', true),
         logging: configService.get<boolean>('DB_LOGGING', false),
-        ssl: configService.get<boolean>('DB_SSL', false)
-          ? { rejectUnauthorized: false }
-          : undefined,
+        ssl: { rejectUnauthorized: false },
       }),
     }),
   ],
   exports: [TypeOrmModule],
 })
-export class DatabaseModule {}
+export class DatabaseModule { }
