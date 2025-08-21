@@ -17,7 +17,9 @@ async function bootstrap() {
 
   // Enable CORS
   app.enableCors({
-    origin: '*'
+    origin: ['https://nexus-talk-upload.vercel.app', 'http://localhost:3000'],
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true,
   });
 
   // Set global prefix
